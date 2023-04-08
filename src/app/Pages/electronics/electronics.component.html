@@ -1,0 +1,351 @@
+<div class="container">
+    <br>
+    <h2 class="text-center">Electronics Shops</h2>
+   <br>
+
+<div class="row">
+    <div class="col-md-3 col-sm-6" *ngFor="let data of electronicData; index as i">
+        <div class="product-grid" *ngIf="i<=6">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" [src]="data.image" alt="">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a routerLink="/cart"><i class="fa fa-search"   ></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">{{data.name}}</a></h3>
+                <div class="price">{{data.price}}</div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <span class="product-sale-label">Sale!</span>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's T-Shirt</a></h3>
+                <div class="price"><span>$85.55</span> $71.11</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="../../../assets/img3.jpg">
+                </a>
+                <ul class="product-links">
+                    <li><a href="#"><i class="fa fa-shopping-bag"></i> Add to cart</a></li>
+                    <li><a href="#"><i class="fa fa-search"></i> Quick View</a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <h3 class="title"><a href="#">Women's Cotton Top</a></h3>
+                <div class="price">$79.99</div>
+            </div>
+        </div>
+    </div> -->
+</div>
+</div>
